@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="IGNITE IN YOU.">
-      <meta name="author" content="Nirbhay Singh" /t>
+      <meta name="author" content="Nirbhay Singh"/>
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -19,13 +19,28 @@
       nav{
         opacity:1!important;
         position:static!important;
+        margin-bottom: 30px!important;
+      }.first{
+      	height: auto!important;
+      }.landing-hr{
+      	margin-bottom: 50px!important;
+      }
+      .hiddenText{
+      	opacity: 0;
+      	transition: 0.3s;
+      	font-size: 30px;
+      	color:white;
+      	background-color: #21b2a6;
+      }
+      .memimg:hover > .hiddentext{
+      	opacity: 1;
+      	transition: 0.3s;
       }
     </style>
-   <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="styles.css">
-   <title>Spark 2018</title>
+       <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>
+  <body>  
       <div class="first">
        <nav class="navbar navbar-expand-xl" id="navbar" align="center">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
@@ -37,7 +52,7 @@
                 <a href="team.html">MEMBERS</a>
               </li>
               <li class="nav-item mt-0 navContent">
-                  <a href="event.html">Events</a>
+                  <a href="event.html">Event</a>
               </li>
               <li class="nav-item mt-0 navContent active hidden-md-down">
                   <a href="index.html"><img src="assets/images/lightBulbWhite.png" style="width:50px;height:70px; align-content: center;" id="logo"></a>
@@ -54,8 +69,21 @@
             </ul>
           </div>
         </nav>
-</div>
-      </div>
+        <h1 class="landing-title">Members</h1>
+          <hr class="landing-hr">
+      <div class="events">         
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/anaya.png');"data-toggle="modal" data-target="#fModal"><p class="hiddenText">Anaya Gupta </p></div>
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/arjunloomba.jpg');"data-toggle="modal" data-target="#hpModal"><p class="hiddenText">Arjun Loomba </p></div>
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/arjunpandey.jpg');"data-toggle="modal" data-target="#mcuModal"><p class="hiddenText">Arjun Pandey </p></div>
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/arnav.jpg');"data-toggle="modal" data-target="#cModal"><p class="hiddenText">Arnav Ghatiwala </p></div>
+        </div>
+        <div class="events">
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/kartikeya.jpg');"data-toggle="modal" data-target="#lModal"><p class="hiddenText">Kartikeya Singh </p></div>
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/saarthak.jpg');"data-toggle="modal" data-target="#lModal"><p class="hiddenText">Saarthak Chaturvedi </p></div>
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/saarthak.jpg');"data-toggle="modal" data-target="#lModal"><p class="hiddenText">Saumya Vashishtha</p></div>
+          <div class="eventBlock memimg" style="background-image:url('assets/images/members/saarthak.jpg');"data-toggle="modal" data-target="#lModal"><p class="hiddenText">Vivaan Baid</p></div>
+        </div>
+	</div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
