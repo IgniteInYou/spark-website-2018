@@ -27,7 +27,7 @@ body{
 	margin-left: 3vw;
 	margin-right:4vw;
 	letter-spacing: 5px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }.navContent:hover{
 	transform: scale(1.1);
 	transition: 0.3s;
@@ -131,7 +131,7 @@ ul{
 		display: none;}
 	.navContent{
 		margin-top: 20px;
-	
+
 	}nav{
 		background-color: #1e1e1e;
 		width: 100vw;
@@ -249,4 +249,10 @@ ul{
 	margin-left: 3vw;
 	margin-right: 3vw;
 	font-size: 20px;
+}
+@@supports (-ms-accelerator: true) {
+	/* Edge only */
+	.events{
+		justify-content: space-around;
+	}
 }
