@@ -16,16 +16,49 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <style type="text/css">
+    body{
+      text-align: center;
+    }
+    *{
+      overflow-x:hidden;
+    }
       nav{
         opacity:1!important;
         position:static!important;
+      } @media only screen and (min-width:768px) { 
+        li{
+          list-style: none;
+          width: 200px;
+          height:200px;
+          background-size: cover;
+          margin-top: 0px;
+        }
+        .grid{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          width: 100%!important;
+          flex-direction: row;
+          margin:0!important;
+        }
+      }
+      @media only screen and (max-width:768px) { 
+        .grid{
+          flex-direction: column!important;
+          margin-left: 0!important;
+        }li{
+          list-style: none;
+          width: 100px!important;
+          height:200px;
+          background-size: cover;
+          margin-top: 0px;
+        }
       }
     </style>
        <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
        <link rel="stylesheet" type="text/css" href="styles.css">
-       <title>Spark 2018</title>
   </head>
-  <body>
+  <body>  
       <div class="first">
        <nav class="navbar navbar-expand-xl" id="navbar" align="center">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
@@ -37,7 +70,7 @@
                 <a href="team.html">MEMBERS</a>
               </li>
               <li class="nav-item mt-0 navContent">
-                  <a href="event.html">Events</a>
+                  <a href="event.html">Event</a>
               </li>
               <li class="nav-item mt-0 navContent active hidden-md-down">
                   <a href="index.html"><img src="assets/images/lightBulbWhite.png" style="width:50px;height:70px; align-content: center;" id="logo"></a>
@@ -46,7 +79,7 @@
                 <a href="index.html">Home</a>
               </li>
               <li class="nav-item mt-0 navContent">
-                <a href="volunteers.html">volunteers</a>
+                <a href="volunteers.html">Volunteers</a>
               </li>
               <li class="nav-item mt-0 navContent">
                 <a href="register.html"> Enrol </a>
@@ -54,3 +87,31 @@
             </ul>
           </div>
         </nav>
+          <ul class="grid">
+            <li style="background-image: url('assets/images/volunteers/aishani.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/Adriana.jpeg')"></li>
+            <li style="background-image: url('assets/images/volunteers/akshat.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/dania.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/deshna.jpeg')"></li>
+            <li style="background-image: url('assets/images/volunteers/dhruvi.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/drishti.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/harsh.jpeg')"></li>
+            <li style="background-image: url('assets/images/volunteers/idk.png')"></li>
+            <li style="background-image: url('assets/images/volunteers/idk2.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/keshav.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/mahika.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/manya a.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/nirbhay2.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/pranava.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/priyanshi.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/ravishankar.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/sejal.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/shreyas.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/shubhodya.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/thira.jpg')"></li>
+            <li style="background-image: url('assets/images/volunteers/yash.jpg')"></li>
+          </ul>
+        </div>
+      </div>
+    </body>
+  </html>
