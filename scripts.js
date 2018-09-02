@@ -3,7 +3,6 @@ $(window).scroll(function() {
   if (value === 880){
     $("#navbar").addClass("navbar-static")
     $("#navbar").addClass("navbar-static")
-    $(".landing-image).css("opacity","0")
   }
   $('#navbar').css({
     opacity: function() {
