@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="IGNITE IN YOU.">
-      <meta name="author" content="Nirbhay Singh" /t>
+      <meta name="author" content="Nirbhay Singh" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,35 +25,68 @@
       nav{
         opacity:1!important;
         position:static!important;
-      } @media only screen and (min-width:768px) {
-        li{
-          list-style: none;
-          width: 200px;
-          height:200px;
-          background-size: cover;
-          margin-top: 0px;
-        }
-        .grid{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          width: 100%!important;
-          flex-direction: row;
-          margin:0!important;
-        }
+    }
+    .grid{
+      display: flex;
+      flex-direction: row;
+      height:auto;
+      flex-wrap: wrap;
+      padding: 0px;
+      margin-top: 20px;
+      justify-content: space-evenly;
+    }.vol-block{
+       width: calc(100% * 0.57735);
+      /* border-radius: 50%!important; */
+      height: 200px;
+      grid-gap: 0px;
+      width: 205px;
+      background-size: cover;
+      border-left: 5px solid white;
+      border-top: 5px solid white;
+      border-right: 5px solid #1e1e1e;
+      border-bottom: 5px solid #1e1e1e;
+      margin:0!important;
+    }
+    @media only screen and (max-width:768px) {
+      .grid{
+        flex-direction: row!important;
+        flex-wrap: wrap;
+        padding: 0px;
+
+      }.vol-block{
+        width: 111px!important;
+        height: 100px!important;
+        grid-gap: 0px;
+        /* border-radius: 50%!important; */
+        border-left: 5px solid white;
+        border-top: 5px solid white;
+        border-right: 5px solid ##1e1e1e;
+        border-bottom: 5px solid #1e1e1e;
+        background-size: cover!important;
+        background-repeat: no-repeat;
       }
-      @media only screen and (max-width:768px) {
-        .grid{
-          flex-direction: column!important;
-          margin-left: 0!important;
-        }li{
-          list-style: none;
-          width: 200px!important;
-          height:200px!important;
-          background-size: cover;
-          margin-top: 0px;
-        }
+      .g-first{
+        margin-top: 0!important;
       }
+}.vol{
+      margin-bottom: 50px!important;
+      opacity: 1!important;
+    }#navbar{
+      margin-bottom:10!important;
+    }.hiddenText{
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+      background-color: #1e1e1e;
+      font-family: "Montserrat",sans-serif;
+      opacity: 0;
+    }.vol-block:hover >.hiddenText{
+      opacity: 1;
+      transition: 0.3s;
+    }.vol-block:hover{
+      opacity: 0.7;
+      transition: 0.3s;
+    }
     </style>
        <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
        <link rel="stylesheet" type="text/css" href="styles.css">
@@ -88,31 +121,33 @@
             </ul>
           </div>
         </nav>
-          <ul class="grid">
-            <li style="background-image: url('assets/Volunteer Photos/Adriana.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Aishani.jpg'); transform: rotate(90deg);"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Akshat .jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Anad.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Anupriya.PNG')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Dania.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Deshna.jpeg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Dhruvi.JPG')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Drishti.JPG')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Harsh.jpeg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Harshit Singhania.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Keshav.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Mahika.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Malika.jpeg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Manya A.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Pranava.JPG')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Priyanshi.HEIC')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Ravishankar.JPG'); transform: rotate(90deg)"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Sejal.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Shreyas.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Shubhodya.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Thira.jpg')"></li>
-            <li style="background-image: url('assets/Volunteer Photos/Yash.JPG')"></li>
-          </ul>
+          <h1 class="landing-title vol">Volunteers</h1>
+          <hr class="landing-hr vol">
+          <div class="grid g-first">
+
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/aishani.jpg')"><p class="hiddenText">Aishani</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/adriana.jpeg')"><p class="hiddenText">Adriana</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/akshat.jpg')"><p class="hiddenText">Akshat</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/dania.jpg')"><p class="hiddenText">Dania</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/deshna.jpeg')"><p class="hiddenText">Deshna</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/dhruvi.jpg')"><p class="hiddenText">Dhruvi</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/drishti.jpg')"><p class="hiddenText">Drishti</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/harsh.jpeg')"><p class="hiddenText">Harsh</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/idk.png')"><p class="hiddenText">Anupriya</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/idk2.jpg')"><p class="hiddenText">Anad</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/keshav.jpg')"><p class="hiddenText">Keshav</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/mahika.jpg')"><p class="hiddenText">Mahika</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/manya a.jpg')"><p class="hiddenText">Manya</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/nirbhay2.jpg')"><p class="hiddenText">Nirbhay</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/pranava.jpg')"><p class="hiddenText">Pranava</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/priyanshi.jpg')"><p class="hiddenText">Priyanshi</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/ravishankar.jpg')"><p class="hiddenText">Ravi</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/sejal.jpg')"><p class="hiddenText">Sejal</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/shreyas.jpg')"><p class="hiddenText">Shreyas</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/shubhodya.jpg')"><p class="hiddenText">Shubh</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/thira.jpg')"><p class="hiddenText">Thira</p></div>
+
+       </div>
         </div>
       </div>
     </body>
